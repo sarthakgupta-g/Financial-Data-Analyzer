@@ -10,3 +10,9 @@ print(data.shape)
 print(f"the mean is: {data['Price'].mean()}")
 print(f"the max is: {data['Price'].max()}")
 print(f"the min is: {data['Price'].min()}")
+
+start_price=data['Price'].iloc[0]
+end_price=data["Price"].iloc[-1]
+print(f"the starting price is: {start_price}")
+print(f"the ending price is: {end_price}")
+print(f"the return is: {(end_price - start_price)/start_price * 100:.2f}%")

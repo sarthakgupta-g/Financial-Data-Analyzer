@@ -6,3 +6,7 @@ print(data.head())
 print(data.columns)
 print(data.info())
 print(data.shape)
+
+print(data.mean())
+print(data.max())
+print(data.min())
